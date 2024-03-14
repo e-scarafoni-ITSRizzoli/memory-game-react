@@ -1,0 +1,134 @@
+#root {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+body {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+img {
+  width: 10rem;
+}
+
+div.card {
+  padding: 3.5rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+div.card:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, .4);
+}
+
+div.scores {
+  padding: 1.5rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: firebrick;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,h3,h4 {
+  margin: 0;
+  max-width: 90%;
+}
+
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.5rem 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media (max-width: 450px) {
+    div.card {
+      padding: 2rem;
+    }
+    h1,h3,h4 {
+      max-width: 70%;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+  div.scores {
+      background-color: red;
+
+  }
+
+  body {
+    background-image: url("assets/pokeballBg.svg");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  div.card {
+    border: 1px solid #1a1a1a;
+    background-color: white;
+  }
+
+  div.card:hover {
+    background-color: lightgoldenrodyellow;
+
+    box-shadow: 0 5px 15px rgba(255, 236, 139, .4);
+  }
+  h1,h3 {
+    color: black;
+  }
+}
